@@ -35,25 +35,19 @@
     <dd> gileck@wix.com</dd>
     <dt>Phone: </dt>
     <dd> 0509020020</dd>
-    <dt>Date of birth: </dt>
-    <dd> 9/4/1989</dd>
-    <dt>Address: </dt>
-    <dd> Tel Aviv </dd>
-    <dt>Website: </dt>
-    <dd> wix.com</dd>
-    <dt>Language: </dt>
-    <dd> English, Hebrew</dd>
 </dl>
 
-<form action="index.html">
+<form action="index.html" method="get">
     <label for="name">Your Name (required)</label>
-    <input id="name" type="text" required>
+    <input name="name" id="name" type="text" required>
     <label for="email">Your Email (required)</label>
-    <input type="email" id="email" required>
+    <input type="email" id="email" name="email"required>
     <label for="subject">Subject</label>
-    <input type="text" id="subject">
-    <label for="message">How can I help you?</label>
-    <textarea placeholder="Write message here" id="message"></textarea>
+    <input type="text" id="subject" name="subject">
+
+    <div><label for="message">How can I help you?</label>
+        <textarea placeholder="Write message here" id="message" name="message"></textarea>
+    </div>
     <button type="submit">Send</button>
 </form>
 
